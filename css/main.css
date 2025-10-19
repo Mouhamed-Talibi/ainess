@@ -84,45 +84,13 @@ body {
     box-shadow: 0 0 8px var(--coffee-bg-light);
     background-color: var(--coffee-btn-hover);
     color: var(--coffee-bg-dark);
-    transform: translateY(-2px);
+    transform: translateY(4px);
 }
 
 @media (max-width: 600px) {
     .main-btn {
         font-size: 16px;
         padding: 10px 11px;
-    }
-}
-
-/* Main-title */
-.main-title {
-    text-align: center;
-    margin: 30px;
-}
-
-.main-title span {
-    background-color: rgba(169, 180, 18, 0.692);
-    padding: 14px 8px;
-    border-radius: 30px;
-    color: var(--background-color);
-    transition: .5s ease;
-}
-
-.main-title span:hover {
-    background-color: rgba(0, 78, 137, 0.5);
-}
-
-.main-title h1 {
-    margin-top: 10px;
-    font-family: var(--heading-font);
-    font-size: 50px;
-    font-weight: 800;
-}
-
-@media (max-width: 590px) {
-    .main-title h1 {
-        margin-top: 20px;
-        font-size: 40px;
     }
 }
 
@@ -477,6 +445,12 @@ footer .contact-infos .infos div:hover i {
 .about-content img {
     max-width: 500px;
     height: auto;
+    transform: rotate(-2deg);
+    transition: .7s ease;
+}
+
+.about-content img:hover {
+    transform: translateX(-3px) rotate(2deg) scale(1.01);
 }
 
 .content-2 {
@@ -512,4 +486,97 @@ footer .contact-infos .infos div:hover i {
     .about-text p {
         margin: auto;
     }
+}
+
+/* =============================================================== Why Us ======================================================== */
+.why-us {
+    padding: 40px 0;
+    color: var(--coffee-btn-light);
+    background-color: #362f2c;
+}
+
+.why-us .main-title h1 {
+    position: relative;
+    font-family: var(--font-family);
+    font-size: 35px;
+}
+
+.why-us .main-title h1::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    height: 2px;
+    left: 52%;
+    width: 100px;
+    background-color: var(--coffee-accent);
+}
+
+.why-us .main-title p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.why {
+    border: 1px solid var(--coffee-bg-dark);
+    border-radius: 16px;
+    padding: 40px 25px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+.why:hover {
+    border-color: var(--coffee-accent);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    background-color: var(--coffee-accent);
+}
+
+.why .icon {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: var(--coffee-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+    transition: all 0.4s ease;
+}
+
+.why:hover .icon {
+    background-color: var(--coffee-bg-light);
+    color: var(--coffee-heading);
+    transform: scale(1.1);
+}
+
+.why .icon i {
+    font-size: 25px;
+    transition: color 0.4s ease;
+}
+
+.why:hover .icon i {
+    color: var(--coffee-heading);
+}
+
+.why h3 {
+    font-family: var(--font-family);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--coffee-text);
+    transition: color 0.4s ease;
+}
+
+.why p {
+    opacity: 0.7;
+    line-height: 1.6;
+    font-weight: 300;
+    transition: opacity 0.4s ease;
+}
+
+.why:hover p {
+    opacity: 0.70;
+    color: var(--coffee-bg-dark);
 }
