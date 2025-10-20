@@ -608,6 +608,7 @@ footer {
 }
 
 .category-card {
+    border: 1px solid var(--coffee-accent);
     box-shadow: 0 0 20px var(--coffee-accent);
     width: 420px;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -648,7 +649,7 @@ footer {
 
 .overlay-content {
     transform: translateY(20px);
-    transition: transform 0.4s ease;
+    transition: transform 0.3s ease;
 }
 
 .category-card:hover .overlay-content {
