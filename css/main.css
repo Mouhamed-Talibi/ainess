@@ -687,6 +687,7 @@ footer {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .category-card {
+        width: 400px;
         margin: auto;
     }
 
