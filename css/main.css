@@ -371,14 +371,13 @@ footer {
 }
 
 .about-content img {
-    max-width: 500px;
+    max-width: 490px;
     height: auto;
-    transform: rotate(-2deg);
     transition: .7s ease;
 }
 
 .about-content img:hover {
-    transform: translateX(-3px) rotate(2deg) scale(1.01);
+    transform: translateX(-3px) scale(1.01);
 }
 
 .content-2 {
@@ -520,6 +519,7 @@ footer {
     padding: 40px 0;
     background-color: #362f2c;
     color: var(--coffee-btn-light);
+    overflow-x: hidden;
 }
 
 .card-body {
@@ -581,6 +581,7 @@ footer {
 .btn-coffee-accent {
     background-color: var(--coffee-accent);
     color: white;
+    font-family: var(--font-family);
     border: none;
     transition: all 0.3s ease;
 }
