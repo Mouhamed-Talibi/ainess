@@ -14,6 +14,7 @@
 
 /* all */ 
 * {
+    /* border: 1px solid red; */
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -390,6 +391,12 @@ footer {
     color: var(--coffee-bg-light);
     font-family: var(--font-family);
     margin-bottom: 15px;
+    transition: .4s ease;
+}
+
+.about-text h3:hover {
+    text-decoration: underline;
+    transform: translateY(-2px);
 }
 
 .about-text p {
@@ -422,17 +429,17 @@ footer {
     background-color: #362f2c;
 }
 
-.why-us .main-title h1 {
+.main-title h1 {
     font-family: var(--font-family);
     font-size: 35px;
 }
 
-.why-us .main-title h1 span {
+.main-title h1 span {
     text-decoration: underline;
     color: var(--coffee-accent);
 }
 
-.why-us .main-title p {
+.main-title p {
     font-size: 16px;
     margin-top: 10px;
     opacity: .6;
@@ -506,4 +513,89 @@ footer {
 .why:hover p {
     opacity: 0.70;
     color: var(--coffee-bg-dark);
+}
+
+/* ============================================================ Best Products ====================================================== */
+.best-products {
+    padding: 40px 0;
+    background-color: #362f2c;
+    color: var(--coffee-btn-light);
+}
+
+.card-body {
+    background-color: var(--coffee-bg-dark);
+}
+
+.card-text {
+    color: white;
+    opacity: .7;
+}
+
+.coffee-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 16px;
+}
+
+.coffee-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+.coffee-card .card-img-top {
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.coffee-card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.coffee-card .card-img-overlay {
+    background: linear-gradient(to bottom, transparent 40%, rgba(0, 0, 0, 0.7));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.coffee-card:hover .card-img-overlay {
+    opacity: 1;
+}
+
+.text-coffee-accent {
+    color: var(--coffee-accent) !important;
+}
+
+.text-coffee-heading {
+    font-family: var(--font-family);
+    color: var(--coffee-bg-light) !important;
+}
+
+.bg-coffee-accent {
+    background-color: var(--coffee-btn-hover) !important;
+}
+
+.rating {
+    font-size: 0.9rem;
+}
+
+.btn-coffee-accent {
+    background-color: var(--coffee-accent);
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-coffee-accent:hover {
+    background-color: var(--coffee-brown);
+    color: var(--coffee-text);
+}
+
+.price-badge .badge {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .coffee-card .card-img-overlay {
+        opacity: 1;
+    }
 }
